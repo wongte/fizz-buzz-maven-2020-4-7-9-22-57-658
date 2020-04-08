@@ -15,7 +15,7 @@ public class FizzBuzz {
         return result.equals("") ? String.valueOf(number) : result;
     }
 
-    private boolean isDivisibleBy(int number, int i) {
-        return number % i == 0;
+    private boolean isDivisibleBy(int number, int base) {
+        return number % base == 0;
     }
 }
