@@ -13,4 +13,13 @@ public class FizzBuzzTest {
 
         Assert.assertEquals("1", result);
     }
+
+    @Test
+    public void should_return_fizz_when_number_is_multiple_by_3() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String result = fizzBuzz.say(3);
+
+        Assert.assertEquals("Fizz", result);
+    }
 }
