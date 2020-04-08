@@ -6,12 +6,16 @@ public class FizzBuzz {
         String BUZZ_STRING = "Buzz";
         String result = "";
 
-        if (number % 3 == 0) {
+        if (isDivisibleBy(number, 3)) {
             result += FIZZ_STRING;
         }
-        if (number % 5 == 0) {
+        if (isDivisibleBy(number, 5)) {
             result += BUZZ_STRING;
         }
         return result.equals("") ? String.valueOf(number) : result;
+    }
+
+    private boolean isDivisibleBy(int number, int i) {
+        return number % i == 0;
     }
 }
