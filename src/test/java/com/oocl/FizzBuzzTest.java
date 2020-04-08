@@ -31,4 +31,13 @@ public class FizzBuzzTest {
 
         Assert.assertEquals("Buzz", result);
     }
+
+    @Test
+    public void should_return_fizz_buzz_when_number_is_multiple_by_3_and_5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String result = fizzBuzz.say(15);
+
+        Assert.assertEquals("FizzBuzz", result);
+    }
 }
