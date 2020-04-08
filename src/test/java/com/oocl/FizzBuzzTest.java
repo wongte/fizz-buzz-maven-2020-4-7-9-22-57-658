@@ -22,4 +22,13 @@ public class FizzBuzzTest {
 
         Assert.assertEquals("Fizz", result);
     }
+
+    @Test
+    public void should_return_buzz_when_number_is_multiple_by_5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String result = fizzBuzz.say(5);
+
+        Assert.assertEquals("Buzz", result);
+    }
 }
